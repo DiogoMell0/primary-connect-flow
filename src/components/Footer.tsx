@@ -8,9 +8,9 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="space-y-4">
             <img src={logo} alt="Primary Solutions" className="h-10 w-auto" />
-            <p className="text-foreground-muted text-sm max-w-xs">
-              Engenharia de software B2B voltada para indústrias e empresas de
-              serviços que buscam eficiência operacional com segurança.
+            <p className="text-foreground-muted text-sm max-w-xs leading-relaxed">
+              Consultoria e desenvolvimento em Power Platform, automações,
+              integrações, agentes de IA e documentação técnica para empresas.
             </p>
           </div>
 
@@ -35,13 +35,19 @@ const Footer = () => {
                 href="#"
                 className="text-foreground-muted hover:text-foreground transition-colors"
               >
-                Política de Privacidade
+                Privacidade
               </a>
               <a
                 href="#"
                 className="text-foreground-muted hover:text-foreground transition-colors"
               >
-                Termos de Uso
+                Termos
+              </a>
+              <a
+                href="#contato"
+                className="text-foreground-muted hover:text-foreground transition-colors"
+              >
+                Contato
               </a>
             </div>
           </div>
@@ -57,7 +63,7 @@ const Footer = () => {
             href="#contato"
             className="text-accent text-sm hover:underline font-medium"
           >
-            Pronto para transformar sua operação? Fale com um especialista →
+            Pronto para automatizar sua operação? Fale conosco →
           </a>
         </div>
       </div>

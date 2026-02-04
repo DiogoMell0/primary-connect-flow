@@ -41,12 +41,13 @@ const CTASection = () => {
           {/* Section Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Pronto para reduzir atrito operacional e{" "}
-              <span className="text-gradient">ganhar escala com segurança?</span>
+              Pronto para automatizar processos e{" "}
+              <span className="text-gradient">ganhar escala com governança?</span>
             </h2>
             <p className="text-foreground-muted text-lg max-w-2xl mx-auto">
-              Agende um diagnóstico consultivo gratuito e receba um mapeamento
-              inicial do seu cenário com recomendações personalizadas.
+              Agende um diagnóstico consultivo. Você recebe um direcionamento
+              inicial com oportunidades, riscos e próximos passos — sem
+              compromisso.
             </p>
           </div>
 
@@ -140,6 +141,9 @@ const CTASection = () => {
                       className="input-dark cursor-pointer"
                     >
                       <option value="">Selecione o segmento</option>
+                      <option value="operacoes">Operações</option>
+                      <option value="atendimento">Atendimento</option>
+                      <option value="ti">TI</option>
                       <option value="industria">Indústria</option>
                       <option value="servicos">Serviços</option>
                       <option value="outro">Outro</option>
@@ -152,7 +156,7 @@ const CTASection = () => {
                     htmlFor="desafio"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    Descreva seu principal desafio
+                    Principal desafio
                   </label>
                   <textarea
                     id="desafio"
@@ -162,7 +166,7 @@ const CTASection = () => {
                     value={formData.desafio}
                     onChange={handleChange}
                     className="input-dark resize-none"
-                    placeholder="Conte-nos sobre o processo ou sistema que gostaria de otimizar..."
+                    placeholder="Descreva brevemente o processo ou sistema que gostaria de otimizar..."
                   />
                 </div>
 
@@ -180,7 +184,7 @@ const CTASection = () => {
                 </div>
 
                 <p className="text-center text-foreground-muted text-sm">
-                  Sem compromisso. Resposta em até 24h úteis.
+                  Sem compromisso. Retorno em até 24h úteis.
                 </p>
               </form>
             )}

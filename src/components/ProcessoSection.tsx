@@ -7,32 +7,32 @@ const ProcessoSection = () => {
       step: "01",
       title: "Diagnóstico e Estratégia",
       description:
-        "Análise profunda do cenário atual, mapeamento de processos e definição de roadmap estratégico.",
-      entregavel: "Relatório de Viabilidade Técnica",
+        "Mapeamos processos, dados, riscos e oportunidades.",
+      entregavel: "Mapa de Processos + Recomendações Prioritárias",
     },
     {
       icon: PenTool,
       step: "02",
-      title: "Design e Arquitetura",
+      title: "Blueprint (Arquitetura & Backlog)",
       description:
-        "Prototipagem e definição da infraestrutura, escolha de tecnologias e design de integrações.",
-      entregavel: "Blueprint de Arquitetura de Software",
+        "Desenhamos a solução (Power Platform + integrações + governança) e definimos backlog.",
+      entregavel: "Blueprint + Backlog Priorizado",
     },
     {
       icon: Zap,
       step: "03",
-      title: "Desenvolvimento Ágil",
+      title: "Construção em Sprints",
       description:
-        "Sprints iterativos com feedback contínuo, entregas incrementais e validação constante.",
-      entregavel: "Incrementos Funcionais Validados",
+        "Entregas incrementais com validação, testes e documentação evolutiva.",
+      entregavel: "Incrementos validados + Documentação",
     },
     {
       icon: Rocket,
       step: "04",
-      title: "Implantação e Governança",
+      title: "Implantação, Governança e Evolução",
       description:
-        "Go-live controlado, transferência de conhecimento, suporte contínuo e evolução planejada.",
-      entregavel: "Plano de Suporte e Monitoramento",
+        "Go-live controlado, handover, monitoramento e plano de evolução.",
+      entregavel: "Runbook + Handover + Plano de Sustentação",
     },
   ];
 

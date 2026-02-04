@@ -8,40 +8,40 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Como garantem segurança e conformidade dos dados?",
+      question: "Como garantem segurança e conformidade (LGPD)?",
       answer:
-        "Seguimos práticas de desenvolvimento seguro (OWASP), criptografia de dados em trânsito e em repouso, controle de acesso granular e auditoria de logs. Também apoiamos adequação à LGPD e outras regulamentações específicas do setor.",
+        "Seguimos boas práticas de segurança desde o início: permissões granulares, auditoria de logs, criptografia de dados e controle de acesso. Apoiamos adequação à LGPD com mapeamento de dados e políticas de retenção.",
     },
     {
-      question: "Qual o modelo de precificação e como estimam ROI?",
+      question: "Qual o modelo de precificação?",
       answer:
-        "Trabalhamos com escopo fechado por fase ou modelo de alocação contínua, dependendo da natureza do projeto. Durante o diagnóstico inicial, mapeamos potenciais ganhos operacionais e construímos uma estimativa de retorno baseada em métricas reais do seu negócio.",
+        "Trabalhamos com escopo fechado por fase ou modelo de alocação contínua, dependendo da complexidade do projeto. O diagnóstico inicial já inclui estimativa de investimento e cronograma.",
     },
     {
       question:
         "Integra com sistemas legados (ERP, planilhas, ferramentas internas)?",
       answer:
-        "Sim. Nossa plataforma de integração é desenhada para conectar sistemas heterogêneos — ERPs como SAP, TOTVS, Sankhya, além de planilhas, bancos de dados legados e APIs de terceiros. Priorizamos integrações limpas e documentadas.",
+        "Sim. Conectamos Power Platform com ERPs (SAP, TOTVS, Sankhya), CRMs, planilhas, bancos de dados e APIs de terceiros. Priorizamos integrações sustentáveis e bem documentadas.",
     },
     {
-      question: "Qual o prazo médio de um projeto?",
+      question: "Qual prazo médio para ver valor?",
       answer:
-        "Depende da complexidade. Projetos de automação pontual podem levar de 4 a 8 semanas. Plataformas mais robustas, de 3 a 6 meses. O diagnóstico inicial já entrega uma estimativa realista baseada no escopo mapeado.",
+        "Projetos pontuais de automação podem gerar resultados em 4 a 8 semanas. Plataformas mais robustas levam de 3 a 6 meses. O diagnóstico inicial entrega estimativa realista baseada no escopo.",
     },
     {
-      question: "Vocês oferecem suporte e manutenção pós-implantação?",
+      question: "Vocês fazem sustentação e evolução contínua?",
       answer:
-        "Sim. Oferecemos planos de suporte contínuo com SLAs definidos, monitoramento proativo, correções evolutivas e apoio para novas funcionalidades. O objetivo é garantir que a solução continue performando e evoluindo.",
+        "Sim. Oferecemos planos de suporte com SLAs definidos, monitoramento proativo, correções e novas funcionalidades. O objetivo é garantir que a solução continue evoluindo com o negócio.",
     },
     {
       question: "Como funciona o diagnóstico inicial?",
       answer:
-        "É uma sessão consultiva onde entendemos seu contexto operacional, mapeamos processos-chave, identificamos gargalos e oportunidades. Ao final, entregamos um relatório de viabilidade técnica com recomendações de arquitetura e roadmap sugerido.",
+        "É uma sessão consultiva onde entendemos seu contexto, mapeamos processos-chave e identificamos oportunidades. Ao final, você recebe um mapa de processos, recomendações prioritárias e um direcionamento claro.",
     },
     {
       question: "A documentação faz parte da entrega?",
       answer:
-        "Sempre. Toda entrega inclui documentação técnica (arquitetura, fluxos, APIs) e documentação operacional (manuais de uso, runbooks). Isso garante autonomia para sua equipe e facilita futuras evoluções.",
+        "Sempre. Toda entrega inclui documentação técnica (arquitetura, fluxos, APIs) e operacional (manuais, runbooks). Isso garante autonomia para sua equipe e facilita handover.",
     },
   ];
 

@@ -1,24 +1,24 @@
-import { FileCheck, Cog, Network } from "lucide-react";
+import { LayoutGrid, Network, Bot } from "lucide-react";
 
 const ModulosSection = () => {
   const modulos = [
     {
-      icon: FileCheck,
-      title: "Governança e Documentação Técnica",
+      icon: LayoutGrid,
+      title: "Power Apps & Fluxos Operacionais",
       description:
-        "Padrões de arquitetura, runbooks operacionais, documentação de sistemas e processos estruturados de handover para garantir continuidade.",
-    },
-    {
-      icon: Cog,
-      title: "Motor de Automação de Processos",
-      description:
-        "Soluções com RPA e IA para automação de fluxos, aprovações inteligentes, alertas proativos e integração entre sistemas legados.",
+        "Apps internos + automações de aprovação, cadastros, OS, auditorias e solicitações.",
     },
     {
       icon: Network,
-      title: "Plataforma de Integração Segura",
+      title: "Integrações & Orquestração",
       description:
-        "APIs robustas, filas de mensageria, observabilidade completa e auditoria de ponta a ponta para integrações enterprise.",
+        "Conectamos Power Platform com ERP/CRM/legados via conectores/APIs com monitoramento e manutenção sustentável.",
+    },
+    {
+      icon: Bot,
+      title: "Agentes de IA com Governança",
+      description:
+        "Agentes para atendimento e processos internos com limites, base de conhecimento e rastreabilidade.",
     },
   ];
 
@@ -33,18 +33,15 @@ const ModulosSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Módulos <span className="text-gradient">"Productized"</span> para
-            Implantação Rápida
+            Aceleradores para{" "}
+            <span className="text-gradient">Implantação Rápida</span>
           </h2>
         </div>
 
         {/* Cards Grid */}
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {modulos.map((modulo, index) => (
-            <div
-              key={index}
-              className="card-glow p-8 text-center"
-            >
+            <div key={index} className="card-glow p-8 text-center">
               <div className="icon-glow w-16 h-16 mx-auto mb-6">
                 <modulo.icon className="w-8 h-8 text-accent" />
               </div>
