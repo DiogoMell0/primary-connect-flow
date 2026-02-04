@@ -4,27 +4,27 @@ const CompromissosSection = () => {
   const compromissos = [
     {
       icon: Shield,
-      title: "Segurança e rastreabilidade por padrão",
+      title: "Governança desde o início",
       description:
-        "Práticas de segurança incorporadas desde o primeiro dia de desenvolvimento.",
+        "Permissões, rastreabilidade e padrões incorporados desde o primeiro dia.",
     },
     {
       icon: FileText,
-      title: "Documentação clara e entregável",
+      title: "Documentação entregável",
       description:
-        "Toda entrega acompanha documentação técnica e operacional completa.",
+        "Arquitetura, fluxos, regras de negócio e runbooks em cada entrega.",
     },
     {
       icon: Link2,
-      title: "Integrações limpas e manuteníveis",
+      title: "Integrações limpas e sustentáveis",
       description:
-        "Código modular, bem estruturado e preparado para evoluções futuras.",
+        "Monitoramento, modularidade e código preparado para evoluções.",
     },
     {
       icon: Eye,
       title: "Transparência de escopo e evolução",
       description:
-        "Comunicação clara sobre entregas, prazos e decisões técnicas.",
+        "Priorização por impacto, comunicação clara e roadmap compartilhado.",
     },
   ];
 
@@ -49,10 +49,7 @@ const CompromissosSection = () => {
         {/* Compromissos Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {compromissos.map((compromisso, index) => (
-            <div
-              key={index}
-              className="card-glow p-6 text-center"
-            >
+            <div key={index} className="card-glow p-6 text-center">
               <div className="icon-glow w-14 h-14 mx-auto mb-5">
                 <compromisso.icon className="w-7 h-7 text-accent" />
               </div>

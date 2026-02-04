@@ -1,7 +1,13 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 import heroImage from "@/assets/hero-illustration.png";
 
 const Hero = () => {
+  const bullets = [
+    "Apps internos sob medida (fluxos, aprovações, cadastros, checklists)",
+    "Automação de atendimento e operações (SLA, triagem, alertas, relatórios)",
+    "Integrações + documentação técnica para continuidade (handover)",
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background gradient effects */}
@@ -15,16 +21,29 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
-              Engenharia de Software{" "}
-              <span className="text-gradient">de Alta Performance</span> para
-              Serviços e Indústrias.
+              Power Platform, Automação e IA para{" "}
+              <span className="text-gradient">reduzir atrito operacional</span>{" "}
+              e escalar com governança.
             </h1>
 
             <p className="text-lg md:text-xl text-foreground-muted max-w-xl leading-relaxed">
-              Previsibilidade e Governança em Cada Linha de Código. Transforme
-              Operações Complexas com Software Sob Medida que Escala com
-              Segurança.
+              Implementamos Power Apps, Power Automate e Power BI, criamos
+              integrações e agentes de IA para atendimento e processos internos
+              — com documentação completa e entregas previsíveis.
             </p>
+
+            {/* Bullets */}
+            <ul className="space-y-3">
+              {bullets.map((bullet, index) => (
+                <li
+                  key={index}
+                  className="flex items-start gap-3 text-foreground-muted"
+                >
+                  <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -53,7 +72,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-primary/10 blur-3xl rounded-full transform scale-75" />
               <img
                 src={heroImage}
-                alt="Tecnologia e integração de sistemas"
+                alt="Power Platform, automação e integração de sistemas"
                 className="relative z-10 w-full max-w-lg mx-auto lg:max-w-none"
               />
             </div>
