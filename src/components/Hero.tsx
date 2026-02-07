@@ -39,7 +39,7 @@ const Hero = () => {
                   key={index}
                   className="flex items-start gap-3 text-foreground-muted"
                 >
-                  <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <span>{bullet}</span>
                 </li>
               ))}

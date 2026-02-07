@@ -49,7 +49,7 @@ const SolucoesSection = () => {
               {/* Header */}
               <div className="flex items-start gap-4 mb-6">
                 <div className="icon-glow w-14 h-14 flex-shrink-0">
-                  <solucao.icon className="w-7 h-7 text-accent" />
+                  <solucao.icon className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-2xl lg:text-3xl font-bold text-foreground pt-2">
                   {solucao.title}
@@ -65,7 +65,7 @@ const SolucoesSection = () => {
               <ul className="space-y-4 flex-grow">
                 {solucao.items.map((item, itemIndex) => (
                   <li key={itemIndex} className="flex items-start gap-3">
-                    <item.icon className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                    <item.icon className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-foreground/90 text-sm lg:text-base leading-relaxed">
                       {item.text}
                     </span>

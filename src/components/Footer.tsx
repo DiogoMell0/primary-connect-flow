@@ -61,7 +61,7 @@ const Footer = () => {
           </p>
           <a
             href="#contato"
-            className="text-accent text-sm hover:underline font-medium"
+            className="text-primary text-sm hover:underline font-medium"
           >
             Pronto para automatizar sua operação? Fale conosco →
           </a>

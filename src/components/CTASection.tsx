@@ -56,7 +56,7 @@ const CTASection = () => {
             {isSubmitted ? (
               <div className="text-center py-12">
                 <div className="icon-glow w-20 h-20 mx-auto mb-6">
-                  <CheckCircle className="w-10 h-10 text-accent" />
+                  <CheckCircle className="w-10 h-10 text-primary" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">
                   Mensagem enviada com sucesso!
@@ -82,7 +82,7 @@ const CTASection = () => {
                       required
                       value={formData.nome}
                       onChange={handleChange}
-                      className="input-dark"
+                      className="input-light"
                       placeholder="Seu nome"
                     />
                   </div>
@@ -100,7 +100,7 @@ const CTASection = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="input-dark"
+                      className="input-light"
                       placeholder="seu@empresa.com.br"
                     />
                   </div>
@@ -121,7 +121,7 @@ const CTASection = () => {
                       required
                       value={formData.empresa}
                       onChange={handleChange}
-                      className="input-dark"
+                      className="input-light"
                       placeholder="Nome da empresa"
                     />
                   </div>
@@ -138,7 +138,7 @@ const CTASection = () => {
                       required
                       value={formData.segmento}
                       onChange={handleChange}
-                      className="input-dark cursor-pointer"
+                      className="input-light cursor-pointer"
                     >
                       <option value="">Selecione o segmento</option>
                       <option value="operacoes">Operações</option>
@@ -165,7 +165,7 @@ const CTASection = () => {
                     required
                     value={formData.desafio}
                     onChange={handleChange}
-                    className="input-dark resize-none"
+                    className="input-light resize-none"
                     placeholder="Descreva brevemente o processo ou sistema que gostaria de otimizar..."
                   />
                 </div>
