@@ -51,7 +51,7 @@ const CompromissosSection = () => {
           {compromissos.map((compromisso, index) => (
             <div key={index} className="card-glow p-6 text-center">
               <div className="icon-glow w-14 h-14 mx-auto mb-5">
-                <compromisso.icon className="w-7 h-7 text-accent" />
+                <compromisso.icon className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-base font-bold text-foreground mb-3">
                 {compromisso.title}
@@ -65,7 +65,7 @@ const CompromissosSection = () => {
 
         {/* Cases em breve */}
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-background-elevated/50">
+          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-card shadow-sm">
             <span className="text-foreground-muted text-sm">
               📂 Cases de sucesso em breve
             </span>

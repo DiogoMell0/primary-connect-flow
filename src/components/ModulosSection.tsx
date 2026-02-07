@@ -43,7 +43,7 @@ const ModulosSection = () => {
           {modulos.map((modulo, index) => (
             <div key={index} className="card-glow p-8 text-center">
               <div className="icon-glow w-16 h-16 mx-auto mb-6">
-                <modulo.icon className="w-8 h-8 text-accent" />
+                <modulo.icon className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-4">
                 {modulo.title}

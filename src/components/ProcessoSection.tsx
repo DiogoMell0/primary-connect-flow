@@ -54,7 +54,7 @@ const ProcessoSection = () => {
               <div className="card-glow p-6 h-full">
                 {/* Step number */}
                 <div className="icon-glow w-14 h-14 mb-5">
-                  <passo.icon className="w-7 h-7 text-accent" />
+                  <passo.icon className="w-7 h-7 text-primary" />
                 </div>
 
                 <h3 className="text-lg font-bold text-foreground mb-3">
@@ -66,7 +66,7 @@ const ProcessoSection = () => {
                 </p>
 
                 <div className="pt-4 border-t border-border">
-                  <p className="text-xs text-accent font-medium">
+                  <p className="text-xs text-primary font-medium">
                     Entregável:
                   </p>
                   <p className="text-sm text-foreground-muted">
@@ -78,7 +78,7 @@ const ProcessoSection = () => {
               {/* Connector Arrow (hidden on last item and mobile) */}
               {index < passos.length - 1 && (
                 <div className="hidden lg:flex absolute top-1/2 -right-3 transform -translate-y-1/2 z-20">
-                  <ArrowRight className="w-6 h-6 text-accent/50" />
+                  <ArrowRight className="w-6 h-6 text-primary/50" />
                 </div>
               )}
             </div>

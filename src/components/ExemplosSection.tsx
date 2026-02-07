@@ -53,9 +53,9 @@ const ExemplosSection = () => {
           {exemplos.map((exemplo, index) => (
             <div
               key={index}
-              className="flex items-center gap-3 px-5 py-3 rounded-full border border-border bg-background-elevated/50 hover:border-accent/50 transition-colors"
+              className="flex items-center gap-3 px-5 py-3 rounded-full border border-border bg-card hover:border-primary/40 hover:shadow-md transition-all"
             >
-              <exemplo.icon className="w-5 h-5 text-accent flex-shrink-0" />
+              <exemplo.icon className="w-5 h-5 text-primary flex-shrink-0" />
               <span className="text-foreground text-sm font-medium">
                 {exemplo.title}
               </span>
