@@ -1,34 +1,12 @@
-import { useState } from "react";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
+
+const WHATSAPP_NUMBER = "5511976091472";
+const WHATSAPP_MESSAGE = encodeURIComponent(
+  "Olá! Gostaria de saber mais sobre as soluções da Primary Solutions."
+);
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
 
 const CTASection = () => {
-  const [formData, setFormData] = useState({
-    nome: "",
-    email: "",
-    empresa: "",
-    segmento: "",
-    desafio: "",
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Form submission logic here
-    console.log("Form submitted:", formData);
-    setIsSubmitted(true);
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   return (
     <section id="contato" className="py-24 lg:py-32 relative">
       {/* Background effects */}
@@ -37,157 +15,48 @@ const CTASection = () => {
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto text-center">
           {/* Section Header */}
-          <div className="text-center mb-12">
+          <div className="mb-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Pronto para automatizar processos e{" "}
               <span className="text-gradient">ganhar escala com governança?</span>
             </h2>
             <p className="text-foreground-muted text-lg max-w-2xl mx-auto">
-              Agende um diagnóstico consultivo. Você recebe um direcionamento
-              inicial com oportunidades, riscos e próximos passos — sem
-              compromisso.
+              Fale diretamente com nossa equipe pelo WhatsApp. Receba um
+              direcionamento inicial com oportunidades, riscos e próximos passos
+              — sem compromisso.
             </p>
           </div>
 
-          {/* Form Card */}
-          <div className="card-glow p-8 lg:p-12">
-            {isSubmitted ? (
-              <div className="text-center py-12">
-                <div className="icon-glow w-20 h-20 mx-auto mb-6">
-                  <CheckCircle className="w-10 h-10 text-primary" />
-                </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Mensagem enviada com sucesso!
+          {/* WhatsApp CTA Card */}
+          <div className="card-glow p-8 lg:p-12 inline-block">
+            <div className="flex flex-col items-center gap-6">
+              <div className="icon-glow w-20 h-20">
+                <MessageCircle className="w-10 h-10 text-primary" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-2">
+                  Fale Conosco pelo WhatsApp
                 </h3>
-                <p className="text-foreground-muted">
-                  Nossa equipe entrará em contato em até 24 horas úteis.
+                <p className="text-foreground-muted mb-6">
+                  Resposta rápida em horário comercial.
                 </p>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="nome"
-                      className="block text-sm font-medium text-foreground mb-2"
-                    >
-                      Nome completo
-                    </label>
-                    <input
-                      type="text"
-                      id="nome"
-                      name="nome"
-                      required
-                      value={formData.nome}
-                      onChange={handleChange}
-                      className="input-light"
-                      placeholder="Seu nome"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-foreground mb-2"
-                    >
-                      Email corporativo
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="input-light"
-                      placeholder="seu@empresa.com.br"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="empresa"
-                      className="block text-sm font-medium text-foreground mb-2"
-                    >
-                      Empresa
-                    </label>
-                    <input
-                      type="text"
-                      id="empresa"
-                      name="empresa"
-                      required
-                      value={formData.empresa}
-                      onChange={handleChange}
-                      className="input-light"
-                      placeholder="Nome da empresa"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="segmento"
-                      className="block text-sm font-medium text-foreground mb-2"
-                    >
-                      Segmento
-                    </label>
-                    <select
-                      id="segmento"
-                      name="segmento"
-                      required
-                      value={formData.segmento}
-                      onChange={handleChange}
-                      className="input-light cursor-pointer"
-                    >
-                      <option value="">Selecione o segmento</option>
-                      <option value="operacoes">Operações</option>
-                      <option value="atendimento">Atendimento</option>
-                      <option value="ti">TI</option>
-                      <option value="industria">Indústria</option>
-                      <option value="servicos">Serviços</option>
-                      <option value="outro">Outro</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="desafio"
-                    className="block text-sm font-medium text-foreground mb-2"
-                  >
-                    Principal desafio
-                  </label>
-                  <textarea
-                    id="desafio"
-                    name="desafio"
-                    rows={4}
-                    required
-                    value={formData.desafio}
-                    onChange={handleChange}
-                    className="input-light resize-none"
-                    placeholder="Descreva brevemente o processo ou sistema que gostaria de otimizar..."
-                  />
-                </div>
-
-                <div className="pt-4">
-                  <button
-                    type="submit"
-                    className="btn-primary-gradient w-full px-8 py-4 rounded-xl text-base font-semibold text-primary-foreground inline-flex items-center justify-center gap-2 group"
-                  >
-                    Agendar Diagnóstico
-                    <ArrowRight
-                      size={18}
-                      className="group-hover:translate-x-1 transition-transform"
-                    />
-                  </button>
-                </div>
-
-                <p className="text-center text-foreground-muted text-sm">
-                  Sem compromisso. Retorno em até 24h úteis.
-                </p>
-              </form>
-            )}
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary-gradient px-10 py-4 rounded-xl text-base font-semibold text-primary-foreground inline-flex items-center justify-center gap-3 group"
+              >
+                <MessageCircle size={20} />
+                Iniciar Conversa
+                <ArrowRight
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>

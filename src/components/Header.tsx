@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo-primary-solutions.png";
+
+const WHATSAPP_NUMBER = "5511976091472";
+const WHATSAPP_MESSAGE = encodeURIComponent(
+  "Olá! Gostaria de saber mais sobre as soluções da Primary Solutions."
+);
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -44,8 +50,14 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <a href="#contato" className="btn-primary-gradient px-6 py-2.5 rounded-xl text-sm font-semibold text-primary-foreground">
-              Agendar Diagnóstico
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary-gradient px-6 py-2.5 rounded-xl text-sm font-semibold text-primary-foreground inline-flex items-center gap-2"
+            >
+              <MessageCircle size={16} />
+              Falar no WhatsApp
             </a>
           </div>
 
@@ -61,8 +73,15 @@ const Header = () => {
               {navLinks.map(link => <a key={link.label} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="text-foreground-muted hover:text-foreground transition-colors text-base font-medium py-2">
                   {link.label}
                 </a>)}
-              <a href="#contato" onClick={() => setIsMobileMenuOpen(false)} className="btn-primary-gradient px-6 py-3 rounded-xl text-sm font-semibold text-primary-foreground text-center mt-2">
-                Agendar Diagnóstico
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="btn-primary-gradient px-6 py-3 rounded-xl text-sm font-semibold text-primary-foreground text-center mt-2 inline-flex items-center justify-center gap-2"
+              >
+                <MessageCircle size={16} />
+                Falar no WhatsApp
               </a>
             </div>
           </div>}

@@ -1,5 +1,11 @@
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-illustration.png";
+
+const WHATSAPP_NUMBER = "5511976091472";
+const WHATSAPP_MESSAGE = encodeURIComponent(
+  "Olá! Gostaria de saber mais sobre as soluções da Primary Solutions."
+);
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
 
 const Hero = () => {
   const bullets = [
@@ -47,10 +53,13 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#contato"
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary-gradient px-8 py-4 rounded-xl text-base font-semibold text-primary-foreground inline-flex items-center justify-center gap-2 group"
               >
-                Agendar Diagnóstico
+                <MessageCircle size={18} />
+                Falar no WhatsApp
                 <ArrowRight
                   size={18}
                   className="group-hover:translate-x-1 transition-transform"

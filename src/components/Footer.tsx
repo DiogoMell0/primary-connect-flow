@@ -1,4 +1,11 @@
+import { MessageCircle } from "lucide-react";
 import logo from "@/assets/logo-primary-solutions.png";
+
+const WHATSAPP_NUMBER = "5511976091472";
+const WHATSAPP_MESSAGE = encodeURIComponent(
+  "Olá! Gostaria de saber mais sobre as soluções da Primary Solutions."
+);
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
 
 const Footer = () => {
   return (
@@ -60,9 +67,12 @@ const Footer = () => {
             reservados.
           </p>
           <a
-            href="#contato"
-            className="text-primary text-sm hover:underline font-medium"
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary text-sm hover:underline font-medium inline-flex items-center gap-2"
           >
+            <MessageCircle size={16} />
             Pronto para automatizar sua operação? Fale conosco →
           </a>
         </div>
