@@ -32,7 +32,7 @@ const Header = () => {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <img alt="Primary Solutions" className="h-10 w-auto" src="/lovable-uploads/3161808c-5f3f-4c82-b608-36a070b35724.png" />
+            <img alt="Primary Solutions" className="h-10 w-auto" src={logo} />
           </a>
 
           {/* Desktop Navigation */}
