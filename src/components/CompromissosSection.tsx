@@ -63,14 +63,6 @@ const CompromissosSection = () => {
           ))}
         </div>
 
-        {/* Cases em breve */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-card shadow-sm">
-            <span className="text-foreground-muted text-sm">
-              📂 Cases de sucesso em breve
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   );
