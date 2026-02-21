@@ -38,7 +38,7 @@ const Header = () => {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <img alt="Primary Solutions" className="h-10 w-auto" src={logo} />
+            <img alt="Primary Solutions" className="h-14 w-auto" src={logo} />
           </a>
 
           {/* Desktop Navigation */}
