@@ -41,8 +41,7 @@ const CertificacaoSection = () => {
                   Time Certificado Microsoft
                 </span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5">
-                  Equipe com{" "}
-                  <span className="text-gradient">certificação PL-900</span>
+                  <span className="text-gradient">Certificação PL-900</span>
                 </h2>
                 <p className="text-foreground-muted text-base md:text-lg leading-relaxed mb-8">
                   Nossos desenvolvedores possuem a certificação{" "}
